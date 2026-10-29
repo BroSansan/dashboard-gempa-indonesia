@@ -5,8 +5,8 @@ Tugas Mandiri Terstruktur · Visualisasi Data dan Informasi · Informatika
 | | |
 |---|---|
 | **Nama / NIM** | Sansan Maulana Anugrah / 230660121104 |
-| **Live App** | _https://....streamlit.app_ |
-| **Repositori** | _https://github.com/USERNAME/dashboard-gempa-indonesia_ |
+| **Live App** | https://dashboard-gempa-indonesia-sansan-spzmh486biybbxyvje2uorz.streamlit.app |
+| **Repositori** | https://github.com/BroSansan/dashboard-gempa-indonesia |
 
 ## Studi kasus
 
@@ -53,11 +53,11 @@ CSV BPS ───seed_sqlite.py────► SQLite:     provinsi ────
 
 ## Hasil utama
 
-Dengan filter bawaan (1 Jan 2020 – 26 Okt 2026, magnitudo ≥ 4,5, seluruh pulau, kedalaman 0–700 km):
+Dengan filter bawaan (1 Jan 2020 – 29 Okt 2026, magnitudo ≥ 4,5, seluruh pulau, kedalaman 0–700 km):
 
 | Indikator | Nilai |
 |---|---|
-| Jumlah gempa | 6.731 |
+| Jumlah gempa | 6.733 |
 | Magnitudo maksimum | 7,8 |
 | Kedalaman rata-rata | 68 km |
 | Provinsi dengan gempa terbanyak | Maluku Utara (1.601 gempa) |
@@ -89,8 +89,6 @@ Tangkapan layar: `docs/` (tambahkan lalu tampilkan di sini, misalnya `![Peta](do
 - SQLAlchemy — Engine configuration: https://docs.sqlalchemy.org/en/20/core/engines.html
 - Plotly — Scatter plots on tile maps: https://plotly.com/python/tile-scatter-maps/
 
-_(Tambahkan repositori publik lain yang benar-benar kamu pelajari.)_
-
 ## Menjalankan secara lokal
 
 ```bash
@@ -115,3 +113,23 @@ streamlit run app.py
 2. share.streamlit.io → *Create app* → pilih repo, branch `main`, file `app.py`.
 3. *Advanced settings → Secrets*, isi `DATABASE_URL = "postgresql://..."`.
 4. Jangan pernah meng-commit password; `.env` dan `.streamlit/secrets.toml` sudah ada di `.gitignore`.
+5. Setelah deploy, buka aplikasi dan pastikan KPI serta peta terisi (berarti kedua DBMS terbaca).
+   Jika aplikasi "tertidur" karena lama tidak dikunjungi, klik **Yes, get this app back up!** dan tunggu sekitar 1 menit.
+
+## Struktur repositori
+
+```
+app.py                    # UI Streamlit + visualisasi Plotly
+pipeline.py               # extract dari 2 DBMS, join haversine + merge Pandas, agregasi
+requirements.txt          # dependensi Python
+.env.example              # contoh variabel lingkungan (tanpa kredensial asli)
+.gitignore                # .env, secrets.toml, .venv tidak ikut di-commit
+db/
+  schema_postgres.sql     # DDL DBMS 1 (tabel gempa)
+  schema_sqlite.sql       # DDL DBMS 2 (tabel provinsi)
+  seed_postgres.py        # unduh katalog USGS dan isi PostgreSQL
+  seed_sqlite.py          # isi SQLite dari data/provinsi.csv
+data/
+  provinsi.csv            # data mentah referensi provinsi
+  referensi.db            # DBMS 2 (SQLite)
+```
