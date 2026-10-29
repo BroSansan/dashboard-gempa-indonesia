@@ -1,0 +1,35 @@
+kode,nama,pulau,lat,lon,penduduk_2020
+1,Aceh,Sumatera,4.70,96.75,5274871
+2,Sumatera Utara,Sumatera,2.10,99.05,14799361
+3,Sumatera Barat,Sumatera,-0.95,100.35,5534472
+4,Riau,Sumatera,0.50,101.55,6394087
+5,Jambi,Sumatera,-1.60,103.60,3548228
+6,Sumatera Selatan,Sumatera,-3.10,104.00,8467432
+7,Bengkulu,Sumatera,-3.80,102.30,2010670
+8,Lampung,Sumatera,-4.90,105.20,9007848
+9,Kepulauan Bangka Belitung,Sumatera,-2.70,106.50,1455678
+10,Kepulauan Riau,Sumatera,1.00,104.50,2064564
+11,DKI Jakarta,Jawa,-6.20,106.85,10562088
+12,Jawa Barat,Jawa,-6.90,107.60,48274162
+13,Jawa Tengah,Jawa,-7.15,110.15,36516035
+14,DI Yogyakarta,Jawa,-7.88,110.40,3668719
+15,Jawa Timur,Jawa,-7.55,112.75,40665696
+16,Banten,Jawa,-6.45,106.15,11904562
+17,Bali,Bali-Nusa Tenggara,-8.35,115.10,4317404
+18,Nusa Tenggara Barat,Bali-Nusa Tenggara,-8.65,117.35,5320092
+19,Nusa Tenggara Timur,Bali-Nusa Tenggara,-9.65,121.00,5325566
+20,Kalimantan Barat,Kalimantan,-0.05,110.50,5414390
+21,Kalimantan Tengah,Kalimantan,-1.70,113.40,2669969
+22,Kalimantan Selatan,Kalimantan,-3.10,115.30,4073584
+23,Kalimantan Timur,Kalimantan,0.50,116.40,3766039
+24,Kalimantan Utara,Kalimantan,3.10,116.00,701814
+25,Sulawesi Utara,Sulawesi,1.00,124.70,2621923
+26,Sulawesi Tengah,Sulawesi,-1.40,121.40,2985734
+27,Sulawesi Selatan,Sulawesi,-3.65,120.00,9073509
+28,Sulawesi Tenggara,Sulawesi,-4.10,122.10,2624875
+29,Gorontalo,Sulawesi,0.70,122.40,1171681
+30,Sulawesi Barat,Sulawesi,-2.50,119.35,1419229
+31,Maluku,Maluku-Papua,-3.20,129.00,1848923
+32,Maluku Utara,Maluku-Papua,1.50,127.80,1282937
+33,Papua Barat,Maluku-Papua,-1.30,133.00,1134068
+34,Papua,Maluku-Papua,-4.00,138.50,4303707
