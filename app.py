@@ -31,7 +31,7 @@ prov = get_prov()
 st.sidebar.header("Filter")
 rentang = st.sidebar.date_input(
     "Rentang tanggal", value=(date(2020, 1, 1), date.today()),
-    min_value=date(2015, 1, 1), max_value=date.today(),
+    min_value=date(2020, 1, 1), max_value=date.today(),
 )
 if not isinstance(rentang, tuple) or len(rentang) != 2:
     st.info("Pilih tanggal awal dan akhir.")
