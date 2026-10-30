@@ -67,8 +67,6 @@ terbanyak; per 1 juta penduduk, Maluku Utara (±231) dan Maluku (±114) juga ter
 Kawasan timur Indonesia lebih sering diguncang gempa dibanding Jawa, sejalan dengan
 zona tumbukan lempeng di sekitar Laut Maluku.
 
-Tangkapan layar: `docs/` (tambahkan lalu tampilkan di sini, misalnya `![Peta](docs/peta.png)`).
-
 ## Keterbatasan
 
 - Pemetaan gempa ke provinsi memakai **titik pusat terdekat**, bukan batas wilayah, sehingga gempa
@@ -84,6 +82,16 @@ Tangkapan layar: `docs/` (tambahkan lalu tampilkan di sini, misalnya `![Peta](do
 
 ## Referensi kode / inspirasi
 
+**Repositori publik yang dipelajari:**
+- SeismoStream (Aditya-Ramachandran) — https://github.com/Aditya-Ramachandran/SiesmoStream
+  Dipelajari untuk teknik peta sebaran gempa interaktif (Streamlit + Plotly) dan pengambilan data dari API USGS.
+- streamlit-tutorial (fneum) — https://github.com/fneum/streamlit-tutorial
+  Dipelajari untuk struktur dasar `app.py` dan `requirements.txt` pada dashboard Streamlit + Plotly.
+
+**Yang dikembangkan sendiri:** penyimpanan data pada dua DBMS (PostgreSQL dan SQLite), skrip seed, pemetaan gempa ke
+provinsi dengan jarak haversine, join dan agregasi Pandas, serta seluruh filter dan visualisasi per provinsi.
+
+**Dokumentasi teknis:**
 - Streamlit — Connect to PostgreSQL: https://docs.streamlit.io/develop/tutorials/databases/postgresql
 - Streamlit — Secrets management: https://docs.streamlit.io/develop/concepts/connections/secrets-management
 - SQLAlchemy — Engine configuration: https://docs.sqlalchemy.org/en/20/core/engines.html
