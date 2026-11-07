@@ -77,8 +77,8 @@ zona tumbukan lempeng di sekitar Laut Maluku.
 ## Sumber data
 
 - **Data primer**: USGS Earthquake Catalog — https://earthquake.usgs.gov/fdsnws/event/1/
-- **Data referensi**: jumlah penduduk provinsi, BPS Sensus Penduduk 2020 — https://sensus.bps.go.id/ ;
-  titik pusat provinsi dan pengelompokan pulau disusun manual (`data/provinsi.csv`).
+- **Data referensi**: Jumlah Penduduk menurut Provinsi, Tahun 2020 (Sensus Penduduk 2020), BPS — https://sensus.bps.go.id/topik/tabular/sp2020/1/1/0. Berkas mentah: data/raw/penduduk_2020_bps.xlsx. Angka penduduk di data/provinsi.csv sudah dicocokkan dengan berkas ini (34 provinsi, total 270.203.917 jiwa); titik pusat provinsi dan pengelompokan pulau disusun manual.
+- **Catatan data mentah gempa**: dibaca langsung dari respons API USGS (format CSV) oleh db/seed_postgres.py dan dimuat ke PostgreSQL tanpa disimpan sebagai berkas.
 
 ## Referensi kode / inspirasi
 
